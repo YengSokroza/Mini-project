@@ -113,9 +113,10 @@ public class Main {
                 }
                 allSeatsFound &= seatFound;
 
-                if (!seatFound && !isValidSeatRange(inputSeatsString)) {
-                    gTable(false,inputSeat + " out of range!");
-                }else{
+                if (!seatFound ) {
+                    if(!isValidSeatRange(inputSeatsString)){
+                        gTable(false,inputSeat + " out of range!");
+                    }
                     gTable(false,inputSeat + " is already booked!", "[ " +  inputSeat + " ] cannot be booked because of unavailability!");
                 }
             }
