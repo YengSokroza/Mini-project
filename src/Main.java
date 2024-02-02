@@ -89,7 +89,7 @@ public class Main {
         String[] inputSeatsArray = inputSeatsString.split(",");
 
         for (int i = 0; i < inputSeatsArray.length; i++) {
-            inputSeatsArray[i] = inputSeatsArray[i].trim();
+            inputSeatsArray[i] = inputSeatsArray[i].trim().toUpperCase();
         }
 
         int studId = Integer.parseInt(isValidNum("-> Please enter student ID: "));
